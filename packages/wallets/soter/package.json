@@ -1,0 +1,37 @@
+{
+  "name": "@aleo123/aleo-wallet-adapter-soter",
+  "version": "0.0.2",
+  "description": "Aleo wallet adapter for the Soter Wallet.",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleoweb123/aleo-wallet-adapter.git"
+  },
+  "author": "aleoweb123",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@aleo123/aleo-wallet-adapter-base": "^0.0.1",
+    "nanoid": "^4.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "bundle": "webpack"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.9.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/aleoweb123/aleo-wallet-adapter/issues"
+  },
+  "homepage": "https://github.com/aleoweb123/aleo-wallet-adapter#readme",
+  "main": "webpack.config.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
