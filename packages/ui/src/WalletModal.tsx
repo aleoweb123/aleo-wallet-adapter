@@ -45,7 +45,7 @@ export const WalletModal: FC<WalletModalProps> = ({ className = '', container = 
 		return installedWallets.length
 			? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 			  installedWallets[0]!
-			: wallets.find((wallet: { adapter: { name: WalletName } }) => wallet.adapter.name === 'Leo Wallet' || wallet.adapter.name === 'Soter Wallet') ||
+			: wallets.find((wallet: { adapter: { name: WalletName } }) =>  wallet.adapter.name === 'Soter Wallet') ||
 					wallets.find((wallet: { adapter: { name: WalletName } }) => wallet.adapter.name === 'Phantom') ||
 					wallets.find((wallet: { readyState: any }) => wallet.readyState === WalletReadyState.Loadable) ||
 					// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -64,7 +64,6 @@ export const WalletModal: FC<WalletModalProps> = ({ className = '', container = 
 		},
 		[hideModal]
 	);
-	console.log(otherWallets, 'otherWallets');
 
 	const handleWalletClick = useCallback(
 		(event: MouseEvent, walletName: WalletName) => {

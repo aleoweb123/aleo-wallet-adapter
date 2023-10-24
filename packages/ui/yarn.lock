@@ -16,20 +16,6 @@
   dependencies:
     "@aleo123/aleo-wallet-adapter-base" "^0.0.1"
 
-"@demox-labs/aleo-wallet-adapter-base@^0.0.19":
-  version "0.0.19"
-  resolved "https://registry.npmmirror.com/@demox-labs/aleo-wallet-adapter-base/-/aleo-wallet-adapter-base-0.0.19.tgz"
-  integrity sha512-D43kBh0WWYC9AfCM23ofMNRA5PBuQJ3D14JvO/GWrZP2HBdfquTJzy7M4cLaUQP92ge1N5cTdKF/DPVnqP5iWA==
-  dependencies:
-    eventemitter3 "^4.0.7"
-
-"@demox-labs/aleo-wallet-adapter-react@^0.0.18":
-  version "0.0.18"
-  resolved "https://registry.npmmirror.com/@demox-labs/aleo-wallet-adapter-react/-/aleo-wallet-adapter-react-0.0.18.tgz"
-  integrity sha512-bit3vR+K/jeO4RZebm6TnU4QeihfWZzDVo/vsfMJHUZfSDnzP0ZBVKQZcYBmtPvXWB9hFI9JPpxWPlp0pf0ZKw==
-  dependencies:
-    "@demox-labs/aleo-wallet-adapter-base" "^0.0.19"
-
 ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz"
