@@ -9,10 +9,10 @@
   dependencies:
     eventemitter3 "^4.0.7"
 
-"@aleo123/aleo-wallet-adapter-react@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@aleo123/aleo-wallet-adapter-react/-/aleo-wallet-adapter-react-0.0.5.tgz#53ce2fcafd79eac818e3e6f0c50af8777801fc4a"
-  integrity sha512-GQBH45CcSqjtYqnar+xp5JnS98tJn6cbOBaUO4dlR09bOKcoWvAjfb2VBsOH6nfimd0qFVdnQln/i7LnwtaLmQ==
+"@aleo123/aleo-wallet-adapter-react@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@aleo123/aleo-wallet-adapter-react/-/aleo-wallet-adapter-react-0.0.6.tgz#b242581040310a39b6612aad521344fcd72ee224"
+  integrity sha512-J1smdHdK5mMzXsU+Xcd+z5fMzIKMV2sPer8N/AQqaOddKiRcGq838GjwnBGIovLWlBaolvgiyQV5TGhfsG0v5g==
   dependencies:
     "@aleo123/aleo-wallet-adapter-base" "^0.0.1"
 
