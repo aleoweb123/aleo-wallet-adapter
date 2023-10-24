@@ -2,7 +2,7 @@
   "compilerOptions": {
     "jsx": "react",
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "nodenext",
     "declaration": true,
     "outDir": "dist",
     "sourceMap": true,
