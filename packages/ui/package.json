@@ -1,31 +1,26 @@
 {
-  "name": "@demox-labs/aleo-wallet-adapter-reactui",
-  "version": "0.0.30",
+  "name": "@aleo123/aleo-wallet-adapter-reactui",
+  "version": "0.0.1",
   "description": "React UI Components for connecting Aleo-compatible wallets to your dApp.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/demox-labs/aleo-wallet-adapter",
-  "author": "Demox Labs",
+  "repository": "https://github.com/aleoweb123/aleo-wallet-adapter.git",
+  "author": "aleoweb123",
   "license": "MIT",
   "scripts": {
     "build": "yarn clean && tsc && yarn copy-files",
     "clean": "rimraf dist/",
-    "copy-files": "copyfiles styles.css dist/",
-    "doc": "typedoc --plugin typedoc-plugin-markdown"
+    "copy-files": "copyfiles styles.css dist/"
   },
   "dependencies": {
     "@aleo123/aleo-wallet-adapter-base": "^0.0.1",
-    "@aleo123/aleo-wallet-adapter-react": "^0.0.5",
-    "@demox-labs/aleo-wallet-adapter-base": "^0.0.19",
-    "@demox-labs/aleo-wallet-adapter-react": "^0.0.18"
+    "@aleo123/aleo-wallet-adapter-react": "^0.0.5"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",
-    "typedoc": "^0.23.18",
-    "typedoc-plugin-markdown": "^3.13.6",
     "typescript": "^4.8.4"
   },
   "peerDependencies": {
