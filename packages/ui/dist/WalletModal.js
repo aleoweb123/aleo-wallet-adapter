@@ -36,7 +36,7 @@ export const WalletModal = ({ className = '', container = 'body' }) => {
             ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
                 installedWallets[0]
             : wallets.find((wallet) => wallet.adapter.name === 'Soter Wallet') ||
-                wallets.find((wallet) => wallet.adapter.name === 'Phantom') ||
+                wallets.find((wallet) => wallet.adapter.name === 'Leo Wallet') ||
                 wallets.find((wallet) => wallet.readyState === WalletReadyState.Loadable) ||
                 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
                 otherWallets[0];

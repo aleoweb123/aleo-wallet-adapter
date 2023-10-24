@@ -20,9 +20,6 @@ export const WalletModal: FC<WalletModalProps> = ({ className = '', container = 
 	const [expanded, setExpanded] = useState(false);
 	const [fadeIn, setFadeIn] = useState(false);
 	const [portal, setPortal] = useState<Element | null>(null);
-
-	console.log(wallets, 'wallets');
-
 	const [installedWallets, otherWallets] = useMemo(() => {
 		const installed: Wallet[] = [];
 		const notDetected: Wallet[] = [];
@@ -46,7 +43,7 @@ export const WalletModal: FC<WalletModalProps> = ({ className = '', container = 
 			? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 			  installedWallets[0]!
 			: wallets.find((wallet: { adapter: { name: WalletName } }) =>  wallet.adapter.name === 'Soter Wallet') ||
-					wallets.find((wallet: { adapter: { name: WalletName } }) => wallet.adapter.name === 'Phantom') ||
+					wallets.find((wallet: { adapter: { name: WalletName } }) => wallet.adapter.name === 'Leo Wallet') ||
 					wallets.find((wallet: { readyState: any }) => wallet.readyState === WalletReadyState.Loadable) ||
 					// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 					otherWallets[0]!;
