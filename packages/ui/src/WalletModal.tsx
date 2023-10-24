@@ -61,6 +61,7 @@ export const WalletModal: FC<WalletModalProps> = ({ className = '', container = 
 		},
 		[hideModal]
 	);
+	console.log(otherWallets, 'otherWallets');
 
 	const handleWalletClick = useCallback(
 		(event: MouseEvent, walletName: WalletName) => {

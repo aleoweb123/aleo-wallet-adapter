@@ -35,8 +35,13 @@ export const WalletModal = ({ className = '', container = 'body' }) => {
         return installedWallets.length
             ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
                 installedWallets[0]
+<<<<<<< HEAD
             : wallets.find((wallet) => wallet.adapter.name === 'Soter Wallet') ||
                 wallets.find((wallet) => wallet.adapter.name === 'Leo Wallet') ||
+=======
+            : wallets.find((wallet) => wallet.adapter.name === 'Leo Wallet' || wallet.adapter.name === 'Aleo123 Wallet') ||
+                wallets.find((wallet) => wallet.adapter.name === 'Phantom') ||
+>>>>>>> 84a1dbbcdd7809bf9df9cb9d2c8e4055fa3af55b
                 wallets.find((wallet) => wallet.readyState === WalletReadyState.Loadable) ||
                 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
                 otherWallets[0];
@@ -49,6 +54,7 @@ export const WalletModal = ({ className = '', container = 'body' }) => {
         event.preventDefault();
         hideModal();
     }, [hideModal]);
+    console.log(otherWallets, 'otherWallets');
     const handleWalletClick = useCallback((event, walletName) => {
         select(walletName);
         handleClose(event);
